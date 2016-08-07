@@ -1,5 +1,4 @@
 # ATOM-TEXT-REPLACE package
-
 A simple plugin for atom written in JavaScript (not CoffeeScript). It's used for simplifying some recurring operations while programming.
 
 ## The two buttons
