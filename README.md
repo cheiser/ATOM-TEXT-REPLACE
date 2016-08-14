@@ -1,4 +1,32 @@
 # ATOM-TEXT-REPLACE package
+-----------------------------------------
+TODO Possible extensions:
+The ability to specify to replace something with an questionmark to replace the content....
+e.g.
+arrayA[0]
+arrayA[1]
+arrayA[2]
+arrayA[3]
+
+Filter: arrayA[?]
+Replace: arrayA
+
+result:
+arrayA
+arrayA
+arrayA
+arrayA
+
+if one wants to find and replace a question mark it has to be escaped as:
+Filter: thiscontains?questionmark
+needs to be
+Filter: thiscontains\?questionmark
+
+
+-----------------------------------
+Maybe also an prefix/postfix on all words...
+
+-----------------------------------------
 A simple plugin for atom written in JavaScript (not CoffeeScript). It's used for simplifying some recurring operations while programming.
 
 ## The two buttons
