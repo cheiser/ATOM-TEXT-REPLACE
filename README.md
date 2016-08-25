@@ -1,6 +1,10 @@
 # ATOM-TEXT-REPLACE package
 -----------------------------------------
-TODO Possible extensions:
+TODO:
+
+Initial focus on filter box and tab support.
+
+Possible extensions:
 The ability to specify to replace something with an questionmark to replace the content....
 e.g.
 arrayA[0]
@@ -9,13 +13,13 @@ arrayA[2]
 arrayA[3]
 
 Filter: arrayA[?]
-Replace: arrayA
+Replace: x
 
 result:
-arrayA
-arrayA
-arrayA
-arrayA
+arrayA[x]
+arrayA[x]
+arrayA[x]
+arrayA[x]
 
 if one wants to find and replace a question mark it has to be escaped as:
 Filter: thiscontains?questionmark
@@ -25,6 +29,11 @@ Filter: thiscontains\?questionmark
 
 -----------------------------------
 Maybe also an prefix/postfix on all words...
+
+---------------------------------------------
+
+bug with
+h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0])
 
 -----------------------------------------
 A simple plugin for atom written in JavaScript (not CoffeeScript). It's used for simplifying some recurring operations while programming.
