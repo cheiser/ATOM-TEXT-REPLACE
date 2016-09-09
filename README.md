@@ -1,8 +1,6 @@
 # ATOM-TEXT-REPLACE package
 -----------------------------------------
-TODO:
-ALSO LOWER CASE/UPPER CASE FUCKS UP WHEN YOU SELECT A DIFFERENT TAB TO DO THE REPLACEMENT IN
-
+<!-- TODO:
 Initial focus on filter box and tab support.
 
 Possible extensions:
@@ -34,12 +32,12 @@ Maybe also an prefix/postfix on all words...
 ---------------------------------------------
 
 bug with
-h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0])
+h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0]) -->
 
 -----------------------------------------
 A simple plugin for atom written in JavaScript (not CoffeeScript). It's used for simplifying some recurring operations while programming.
 
-## The two buttons
+## The four buttons
 ###INDEX
 This button automatically updates the indices of a variable.
 
@@ -83,6 +81,32 @@ This is but a test
 Yes a changed
 
 Nice test!
+```
+
+### LowerCase
+This button converts the selected text to lower case.
+
+```
+This is but a test
+```
+
+Becomes
+
+```
+this is but a test
+```
+
+### UpperCase
+This button converts the selected text to upper case.
+
+```
+This is but a test
+```
+
+Becomes
+
+```
+THIS IS BUT A TEST
 ```
 
 ## Installation
