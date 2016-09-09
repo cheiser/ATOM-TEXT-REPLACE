@@ -1,6 +1,7 @@
 # ATOM-TEXT-REPLACE package
 -----------------------------------------
 TODO:
+ALSO LOWER CASE/UPPER CASE FUCKS UP WHEN YOU SELECT A DIFFERENT TAB TO DO THE REPLACEMENT IN
 
 Initial focus on filter box and tab support.
 
