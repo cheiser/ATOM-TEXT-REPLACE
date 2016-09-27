@@ -29,10 +29,23 @@ Filter: thiscontains\?questionmark
 -----------------------------------
 Maybe also an prefix/postfix on all words...
 
+-----------------------------------
+The ability to use \n, \t etc.
+-----------------------------------
+replace all white-space characters with something...
+
+-----------------------------------
+regex replacement? the user enters a regex string and it is replaced with whatever the
+user specifies. Perhaps even some replacement logic?
+-----------------------------------
+display the number of matches for filter (as the user is entering each letter, i.e.
+a onChange event triggers a function which displays the current number of matches)
 ---------------------------------------------
 
 bug with
-h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0]) -->
+h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0])
+and [splitted[2], splitted[2], splitted[2]]
+-->
 
 -----------------------------------------
 A simple plugin for atom written in JavaScript (not CoffeeScript). It's used for simplifying some recurring operations while programming.
@@ -81,6 +94,39 @@ This is but a test
 Yes a changed
 
 Nice test!
+```
+
+#### Regex replace
+This button also has support for a regular expression find and replace.
+
+For example
+
+original text:
+
+```
+a[0]
+b[0]
+c[0]
+```
+
+filter:
+
+```
+/\w\[0\]/
+```
+
+and replace text:
+
+```
+k
+```
+
+results in:
+
+```
+k[0]
+k[0]
+k[0]
 ```
 
 ### LowerCase
