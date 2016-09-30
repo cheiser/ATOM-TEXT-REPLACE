@@ -3,40 +3,6 @@
 <!-- TODO:
 Initial focus on filter box and tab support.
 
-Possible extensions:
-The ability to specify to replace something with an questionmark to replace the content....
-e.g.
-arrayA[0]
-arrayA[1]
-arrayA[2]
-arrayA[3]
-
-Filter: arrayA[?]
-Replace: x
-
-result:
-arrayA[x]
-arrayA[x]
-arrayA[x]
-arrayA[x]
-
-if one wants to find and replace a question mark it has to be escaped as:
-Filter: thiscontains?questionmark
-needs to be
-Filter: thiscontains\?questionmark
-
-
------------------------------------
-Maybe also an prefix/postfix on all words...
-
------------------------------------
-The ability to use \n, \t etc.
------------------------------------
-replace all white-space characters with something...
-
------------------------------------
-regex replacement? the user enters a regex string and it is replaced with whatever the
-user specifies. Perhaps even some replacement logic?
 -----------------------------------
 display the number of matches for filter (as the user is entering each letter, i.e.
 a onChange event triggers a function which displays the current number of matches)
@@ -45,6 +11,8 @@ a onChange event triggers a function which displays the current number of matche
 bug with
 h, s, v = colorsys.rgb_to_hsv(frame[y][x][0], frame[y][x][0], frame[y][x][0])
 and [splitted[2], splitted[2], splitted[2]]
+
+regex replace: \reg \reg
 -->
 
 -----------------------------------------
@@ -127,6 +95,37 @@ results in:
 k[0]
 k[0]
 k[0]
+```
+
+#### Advanced Regex replace
+It is possible to utilize that which is to be replaced to determine what is to be replacing it.
+
+The way to refer back to the replaced text is through \reg.
+ <!-- and it is also possible to refer to other text that is replaced using \reg\{X\}, where "X" is the absolute index position of the replaced text. -->
+
+Example:
+
+```
+k[0]
+k[0]
+k[0]
+```
+
+filter:
+```
+/k/
+```
+
+replace:
+```
+\regs
+```
+
+Result:
+```
+ks[0]
+ks[0]
+ks[0]
 ```
 
 ### LowerCase
